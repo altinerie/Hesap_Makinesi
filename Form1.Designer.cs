@@ -229,6 +229,7 @@
             this.virgulbuton.Text = ".";
             this.virgulbuton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.virgulbuton.UseVisualStyleBackColor = true;
+            this.virgulbuton.Click += new System.EventHandler(this.virgulbuton_Click);
             // 
             // rakam8
             // 
@@ -354,6 +355,7 @@
             this.yuzdebuton.Text = "%";
             this.yuzdebuton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.yuzdebuton.UseVisualStyleBackColor = true;
+            this.yuzdebuton.Click += new System.EventHandler(this.yuzdebuton_Click);
             // 
             // arti_eksi_button
             // 

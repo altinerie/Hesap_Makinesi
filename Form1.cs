@@ -15,7 +15,9 @@ namespace Hesap
         private char _islem;
         bool _silenecekMi;
         double _ilkSayi;
-        
+        bool _virgul;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -231,11 +233,28 @@ namespace Hesap
             _ilkSayi = Convert.ToDouble(label1.Text);
         }
 
+        private void virgulbuton_Click(object sender, EventArgs e)
+        {
+            if (!_virgul)
+            {
+                label1.Text += ".";
+                _virgul = true;
+            }
+        }
+
         private void arti_eksi_button_Click(object sender, EventArgs e)
         {
 
             double sayi = Convert.ToDouble(label1.Text);
             sayi = sayi * -1;
+            label1.Text = Convert.ToString(sayi);
+        }
+
+        private void yuzdebuton_Click(object sender, EventArgs e)
+        {
+
+            double sayi = Convert.ToDouble(label1.Text);
+            sayi = sayi / 100;
             label1.Text = Convert.ToString(sayi);
         }
     }
